@@ -1,4 +1,4 @@
-# VS Code Extension: EARS Syntax
+# VS Code: EARS Syntax
 
 ## Overview
 
