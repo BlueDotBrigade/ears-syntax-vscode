@@ -1,4 +1,4 @@
-# How To: Create VS Code Extension
+# Software Development: VS Code Extension
 
 ## Background
 
