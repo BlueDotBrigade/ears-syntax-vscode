@@ -1,157 +1,229 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "EARS Syntax",
-    "patterns": [       
+    "scopeName": "text.ears",
+    "patterns": [
+        {
+            "name": "meta.ears.risk",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(RISK: )(.*)$",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.list.begin.markdown"
+                },
+                "2": {
+                    "name": "invalid.deprecated.risk"
+                },
+                "3": {
+                    "name": "meta.paragraph.markdown"
+                }
+            }
+        },
         {
             "name": "meta.ears.complex",
             "description": "Complex Condition: Use when both a specific state and an event trigger are relevant to the requirement.",
-            "match": "\\b(While) (.*)\\, (when) (.*), (the) (.*) (shall).*\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(While) (.*)\\, (when) (.*), (the) (.*) (shall).*\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.precondition"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.trigger"
+                    "name": "keyword.control"
                 },
                 "5": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "6": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "7": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "8": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "9": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
         }, 
         {
             "name": "meta.ears.state",
             "description": "State-Based: Use when the requirement is relevant only in a specific system state.",
-            "match": "^\\s*(?:[\\d-]+\\.\\s+|[-*]\\s+)?\\b(While) (.*)(\\, the) (.*) (shall) (.*)\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(While) (.*)(\\, the) (.*) (shall) (.*)\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.precondition"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "5": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "6": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "7": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
         },
         {
             "name": "meta.ears.event",
             "description": "Event-Triggered: Use when the requirement is a response to a state change.",
-            "match": "^\\s*(?:[\\d-]+\\.\\s+|[-*]\\s+)?\\b(When) (.*)(\\, the) (.*) (shall) (.*)\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(When) (.*)(\\, the) (.*) (shall) (.*)\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.trigger"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "5": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "6": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "7": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
         },
         {
             "name": "meta.ears.optional",
             "description": "Context-Specific: Use when the requirement applies in a particular context or situation.",
-            "match": "^\\s*(?:[\\d-]+\\.\\s+|[-*]\\s+)?\\b(Where) (.*)(\\, the) (.*) (shall) (.*)\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(Where) (.*)(\\, the) (.*) (shall) (.*)\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.feature"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "5": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "6": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "7": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
         },
         {
             "name": "meta.ears.unwanted",
             "description": "Error Handling: Use to specify how the system should handle undesirable or unwanted scenarios.",
-            "match": "^\\s*(?:[\\d-]+\\.\\s+|[-*]\\s+)?\\b(If) (.*)(\\ then) (.*) (shall) (.*)\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(If) (.*)(\\ then) (.*) (shall) (.*)\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.trigger"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "5": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "6": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "7": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
         },
         {
             "name": "meta.ears.ubiquitous",
             "description": "Always Active: Use when the requirement is continuously in effect.",
-            "match": "^\\s*(?:[\\d-]+\\.\\s+|[-*]\\s+)?\\b(The) (.*) (shall) (.*)\\.",
+            "match": "(^\\s*(?:\\d+\\.|[-*+])\\s+)?(The) (.*) (shall) (.*)\\.",
             "captures": {
                 "1": {
-                    "name": "keyword.other.ears"
+                    "name": "punctuation.definition.list.begin.markdown"
                 },
                 "2": {
-                    "name": "entity.name.ears.system"
+                    "name": "keyword.control"
                 },
                 "3": {
-                    "name": "keyword.other.ears"
+                    "name": "meta.paragraph.markdown"
                 },
                 "4": {
-                    "name": "entity.name.ears.response"
+                    "name": "keyword.control"
+                },
+                "5": {
+                    "name": "meta.paragraph.markdown",
+                    "patterns": [
+                        {
+                            "match": "\"(.*)\"",
+                            "name": "string.quoted.double"
+                        }
+                    ]
                 }
             }
+        },
+        {
+            "include": "text.html.markdown"
         }
-    ],
-    "scopeName": "source.ears"
+    ]
 }
