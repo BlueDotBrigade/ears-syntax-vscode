@@ -1,0 +1,71 @@
+# Sample Documentation
+
+## EARS Requirements
+
+The software shall support using different types of expressions (text, alias, and moniker) within the same filter.
+
+When an include filter is applied, the software shall display all matching records in the results. 
+
+While a record is pinned, the software shall always display the pinned record in the results, regardless of any filters that are applied.
+
+While the "tail" option is selected, when a new log entry is written, the software shall refresh the display automatically.
+
+If a log file is corrupted, then software shall display "File corruption detected".
+
+RISK: corrupted files may be problematic.
+
+## Lists
+
+### Ordered Lists
+
+1. The software shall support using different types of expressions (text, alias, and moniker) within the same filter.
+2. When an include filter is applied, the software shall display all matching records in the results. 
+3. While a record is pinned, the software shall always display the pinned record in the results, regardless of any filters that are applied.
+4. While the "tail" option is selected, when a new log entry is written, the software shall refresh the display automatically.
+5. If a log file is corrupted, then software shall display "File corruption detected".
+6. RISK: corrupted files may be problematic.
+7.
+
+### Unordered Lists
+
+Using hyphens:
+
+- The software shall support using different types of expressions (text, alias, and moniker) within the same filter.
+- When an include filter is applied, the software shall display all matching records in the results. 
+- While a record is pinned, the software shall always display the pinned record in the results, regardless of any filters that are applied.
+- While the "tail" option is selected, when a new log entry is written, the software shall refresh the display automatically.
+- If a log file is corrupted, then software shall display "File corruption detected".
+- RISK: corrupted files may be problematic.
+-
+
+Using astericks:
+
+* The software shall support using different types of expressions (text, alias, and moniker) within the same filter.
+* When an include filter is applied, the software shall display all matching records in the results. 
+* While a record is pinned, the software shall always display the pinned record in the results, regardless of any filters that are applied.
+* While the "tail" option is selected, when a new log entry is written, the software shall refresh the display automatically.
+* If a log file is corrupted, then software shall display "File corruption detected".
+* RISK: corrupted files may be problematic.
+*
+
+Using plus signs:
+
++ The software shall support using different types of expressions (text, alias, and moniker) within the same filter.
++ When an include filter is applied, the software shall display all matching records in the results. 
++ While a record is pinned, the software shall always display the pinned record in the results, regardless of any filters that are applied.
++ While the "tail" option is selected, when a new log entry is written, the software shall refresh the display automatically.
++ If a log file is corrupted, then software shall display "File corruption detected".
++ RISK: corrupted files may be problematic.
++
+
+## Code Block
+
+Sample code:
+
+```csharp
+// Sample comment
+public class Test
+{
+	public string Name { get; set; }
+}
+```
