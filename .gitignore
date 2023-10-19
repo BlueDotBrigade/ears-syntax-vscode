@@ -1,0 +1,13 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore the .vscode settings directory created by Visual Studio Code
+.vscode/
+
+# Ignore build artifacts, if applicable
+out/
+dist/
+
+# Ignore system-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows

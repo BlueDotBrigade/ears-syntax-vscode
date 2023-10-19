@@ -1,0 +1,67 @@
+{
+  "name": "ears-syntax-vscode",
+  "displayName": "EARS Syntax",
+  "description": "EARS (Easy Approach to Requirements Syntax) is a structured natural language template for specifying requirements, often using everyday phrases organized into clauses like When, While, If, and Then to describe events, conditions, and expected outcomes clearly and unambiguously.",
+  "version": "0.1.1",
+  "pricing": "Free",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "keywords": [
+    "EARS",
+    "Easy Approach to Requirements Syntax",
+    "SRS",
+    "Requirements",
+    "Documentation"
+  ],
+  "homepage": "https://github.com/BlueDotBrigade/ears-syntax-highlighter/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlueDotBrigade/ears-syntax-highlighter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlueDotBrigade/ears-syntax-highlighter/issues"
+  },
+  "license": "MIT",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ears",
+        "aliases": [
+          "EARS Syntax"
+        ],
+        "extensions": [
+          ".ears",
+          ".md",
+          ".txt",
+          ".feature"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ears",
+        "scopeName": "source.ears",
+        "path": "./syntaxes/ears.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "EARS Default Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ears-default-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ears",
+        "path": "./snippets/ears.code-snippets"
+      }
+    ]
+  }
+}
