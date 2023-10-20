@@ -2,7 +2,7 @@
   "name": "ears-syntax-vscode",
   "displayName": "EARS Syntax",
   "description": "EARS (Easy Approach to Requirements Syntax) is a structured natural language template for specifying requirements, often using everyday phrases organized into clauses like When, While, If, and Then to describe events, conditions, and expected outcomes clearly and unambiguously.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "BlueDotBrigade",
   "icon": "assets/logo.png",
   "pricing": "Free",
@@ -20,13 +20,13 @@
     "Requirements",
     "Documentation"
   ],
-  "homepage": "https://github.com/BlueDotBrigade/ears-syntax-highlighter/blob/master/README.md",
+  "homepage": "https://github.com/BlueDotBrigade/ears-syntax-vscode/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlueDotBrigade/ears-syntax-highlighter.git"
+    "url": "https://github.com/BlueDotBrigade/ears-syntax-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/BlueDotBrigade/ears-syntax-highlighter/issues"
+    "url": "https://github.com/BlueDotBrigade/ears-syntax-vscode/issues"
   },
   "license": "MIT",
   "contributes": {
