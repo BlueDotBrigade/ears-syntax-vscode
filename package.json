@@ -1,8 +1,8 @@
 {
   "name": "ears-syntax-vscode",
   "displayName": "EARS Syntax",
-  "description": "EARS (Easy Approach to Requirements Syntax) is a structured natural language template for specifying requirements, often using everyday phrases organized into clauses like When, While, If, and Then to describe events, conditions, and expected outcomes clearly and unambiguously.",
-  "version": "2.0.0",
+  "description": "Write requirements faster using intuitive EARS templates supported by syntax highlighting and code completion.",
+  "version": "2.1.0",
   "publisher": "BlueDotBrigade",
   "icon": "assets/logo.png",
   "pricing": "Free",
