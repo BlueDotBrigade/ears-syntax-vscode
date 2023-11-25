@@ -73,7 +73,7 @@
 	2. Open _User Settings_
 	3. Create New Token
 		- Name: This is simply the name displayed in Azure.
-			- e.g. `ears-syntax-vscode-pat`
+			- e.g. `EarsSyntaxVsCode-MarketplacePublish-Exp20231124`
 		- Scopes: _Custom_ (be sure to select _Show All Scopes_)
 			- _Marketplace_ (_Publish_)
 	4. Copy the provided PAT to a secure location.
