@@ -68,11 +68,20 @@
 ### Package Publishing
 
 1. `npm install -g vsce`
-2. `vsce login <publisher-name>`
+2. In required, generate a new Personal Access Token (PAT) using Microsoft Azure 
+	1. Sign in to Azure
+	2. Open _User Settings_
+	3. Create New Token
+		- Name: This is simply the name displayed in Azure.
+			- e.g. `ears-syntax-vscode-pat`
+		- Scopes: _Custom_ (be sure to select _Show All Scopes_)
+			- _Marketplace_ (_Publish_)
+	4. Copy the provided PAT to a secure location.
+3. `vsce login <publisher-name>`
 	- Replace <publisher-name> with your Visual Studio Marketplace publisher name. 
 	- When prompted, enter the PAT that you have generated from the Visual Studio Marketplace.
-3. `vsce package`
-4. `vsce publish`
+4. `vsce package`
+5. `vsce publish`
 
 ### Package Installation
 
