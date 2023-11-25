@@ -1,8 +1,6 @@
-# VS Code: EARS Syntax
+# EARS For Visual Studio Code
 
-## Overview
-
-The `EARS Syntax` extension for _Visual Studio Code_ aims to make your experience of writing EARS ([Easy Approach to Requirements Syntax][alistairmavin]) requirements as smooth as possible. This extension offers syntax highlighting and code completion through snippets for various EARS requirement patterns, helping both technical and business stakeholders draft clear, unambiguous requirements.
+Using Alistair Mavin's [EARS Syntax][EARS] (Easy Approach to Requirements Syntax), this _Visual Studio Code_ extension aids business and technical stakeholders write clear and unambiguous software requirements using everyday language.  The documentation process is enhanced by features like _syntax highlighting_ and automatic template generation (via _snippets_).
 
 ## Features
 
@@ -13,7 +11,11 @@ The `EARS Syntax` extension for _Visual Studio Code_ aims to make your experienc
 ### Code Completion
 
 - Use intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
-  
+
+### Markdown Compatible
+
+- Use both EARS and Markdown syntax within the same document.
+
 ## Installation
 
 1. Open VS Code.
@@ -43,4 +45,4 @@ MIT License. See the [LICENSE](LICENSE.txt) file for more details.
 
 For any issues, suggestions, or updates, please [create an issue](https://github.com/BlueDotBrigade/ears-syntax-vscode/issues) or submit a pull request.
 
-[alistairmavin]: https://alistairmavin.com/ears/
+[EARS]: https://alistairmavin.com/ears/
