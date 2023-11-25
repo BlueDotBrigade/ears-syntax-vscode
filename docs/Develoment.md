@@ -65,7 +65,16 @@
 
 ## Deployment
 
-### Using a Package
+### Package Publishing
+
+1. `npm install -g vsce`
+2. `vsce login <publisher-name>`
+	- Replace <publisher-name> with your Visual Studio Marketplace publisher name. 
+	- When prompted, enter the PAT that you have generated from the Visual Studio Marketplace.
+3. `vsce package`
+4. `vsce publish`
+
+### Package Installation
 
 1. Open a *bash* terminal in VS Code.
 2. If you haven't done so already, install:
