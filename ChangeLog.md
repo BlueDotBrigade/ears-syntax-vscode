@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.1.0
+
+### Added
+
+- No new features.
+
+### Changed
+
+- Improvements to the EARS templates.
+
 ## 2.0.0
 
 ### Added
