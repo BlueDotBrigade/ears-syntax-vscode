@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.2.0
+
+### Added
+
+- No new features.
+
+### Changed
+
+- Added a demo of the EARS extension for VS Code.
+
 ## 2.1.0
 
 ### Added
