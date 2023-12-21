@@ -4,7 +4,7 @@
 
 ### Added
 
-- No new features.
+- Added a code snippet: examples of EARS requirements.
 
 ### Changed
 
