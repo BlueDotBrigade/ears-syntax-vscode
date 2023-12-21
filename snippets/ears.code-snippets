@@ -1,6 +1,6 @@
 {
 	"The-Shall": {
-		"prefix": "EARS: Ubiquitous",
+		"prefix": "EARS Ubiquitous",
 		"body": [
 		  "The ${1:<system name>} shall ${2:<system response>}.",
 		],
@@ -8,7 +8,7 @@
 		"scope": "ears,markdown,plaintext,cucumber"
 	  },
 	"While-The-Shall": {
-		"prefix": "EARS: State",
+		"prefix": "EARS State",
 		"body": [
 		  "While ${1:<in state>}, the ${2:<system name>} shall ${3:<system response>}."
 		],
@@ -16,7 +16,7 @@
 		"scope": "ears,markdown,plaintext,cucumber"
 	  },
 	"When-The-Shall": {
-	  "prefix": "EARS: Event",
+	  "prefix": "EARS Event",
 	  "body": [
 		"When ${1:<trigger>}, the ${2:<system name>} shall ${3:<system response>}."
 	  ],
@@ -24,7 +24,7 @@
 	  "scope": "ears,markdown,plaintext,cucumber"
 	},
 	"Where-The-Shall": {
-	  "prefix": "EARS: Optional Feature",
+	  "prefix": "EARS Optional Feature",
 	  "body": [
 		"Where ${1:<feature is included>}, the ${2:<system name>} shall ${3:<system response>}."
 	  ],
@@ -32,7 +32,7 @@
 	  "scope": "ears,markdown,plaintext,cucumber"
 	},
 	"If-Then-Shall": {
-		"prefix": "EARS: Error Handling",
+		"prefix": "EARS Error Handling",
 		"body": [
 		  "If ${1:<trigger>}, then the ${2:<system name>} shall ${3:<system response>}."
 		],
@@ -40,11 +40,41 @@
 		"scope": "ears,markdown,plaintext,cucumber"
 	  },
 	"While-When-The-Shall": {
-	  "prefix": "EARS: Complex Condition",
+	  "prefix": "EARS Complex Condition",
 	  "body": [
 		"While ${1:<in state>}, when ${2:<trigger>}, the ${3:<system name>} shall ${4:<system response>}."
 	  ],
 	  "description": "Use when an event is dependent upon a specific state.",
 	  "scope": "ears,markdown,plaintext,cucumber"
-	}
+	},
+	"Example": {
+		"prefix": "EARS: Examples",
+		"body": [
+		  "# EARS Examples",
+		  "",
+		  "Requirements for an ATM could be written using the _Easy Approach to Requirements Syntax_ (EARS):",		  
+		  "",
+		  "1. The ATM shall weigh at least 650 kilograms.",
+		  "2. While the card reader is empty, the ATM shall display 'Insert card to begin'.",
+		  "3. When the user selects withdrawal, the ATM shall prompt for the amount of currency.",
+		  "4. Where the ATM is equipped with a touchscreen, the ATM shall provide an on-screen keypad for PIN entry.",
+		  "5. If an incorrect PIN is entered three times, then the ATM shall confiscate the debit card and notify the user.",
+		  "6. While the ATM has sufficient funds, when a cash withdrawal request is made, the ATM shall dispense the requested amount.",
+		  "",
+		  "Where each requirement is an example of the following template type:",
+		  "",
+		  "1. UBIQUITOUS: The requirement is always active, regardless of state or condition.",
+		  "2. STATE: Behavior is contingent upon the system being in a specific state.",
+		  "3. EVENT: A system response is initiated by a state change.",
+		  "4. OPTIONAL FEATURE: Behavior depends on the presence or activation of a feature.",
+		  "5. ERROR HANDLING: Responses to error conditions or undesired states.",
+		  "6. COMPLEX CONDITION: An event is dependent upon a specific state.",
+		  "",
+		  "## Additional Reading",
+		  "",
+		  " - [What is EARS?](https://alistairmavin.com/ears/)",
+		],
+		"description": "ATM requirements could be written as...",
+		"scope": "ears,markdown,plaintext,cucumber"
+	  }
   }
