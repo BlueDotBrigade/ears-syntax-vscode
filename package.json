@@ -2,7 +2,7 @@
   "name": "ears-syntax-vscode",
   "displayName": "EARS Syntax",
   "description": "Write requirements faster using intuitive EARS templates supported by syntax highlighting and code completion.",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "publisher": "BlueDotBrigade",
   "icon": "assets/logo.png",
   "pricing": "Free",
