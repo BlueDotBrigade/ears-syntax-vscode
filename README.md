@@ -2,7 +2,7 @@
 
 Using Alistair Mavin's [EARS Syntax][EARS] (Easy Approach to Requirements Syntax), this _Visual Studio Code_ extension aids business and technical stakeholders write clear and unambiguous software requirements using everyday language.  The documentation process is enhanced by features like _syntax highlighting_ and automatic template generation (via _snippets_).
 
-![WeevilDemo](assets/Demo.gif)
+![EarsDemo](assets/Demo.gif)
 
 ## Features
 
