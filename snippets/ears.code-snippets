@@ -52,7 +52,7 @@
 		"body": [
 		  "# EARS Examples",
 		  "",
-		  "Requirements for an ATM could be written using the _Easy Approach to Requirements Syntax_ (EARS):",		  
+		  "Requirements for an ATM can be written using the _Easy Approach to Requirements Syntax_ (EARS):",		  
 		  "",
 		  "1. The ATM shall weigh at least 650 kilograms.",
 		  "2. While the card reader is empty, the ATM shall display 'Insert card to begin'.",
@@ -61,7 +61,7 @@
 		  "5. If an incorrect PIN is entered three times, then the ATM shall confiscate the debit card and notify the user.",
 		  "6. While the ATM has sufficient funds, when a cash withdrawal request is made, the ATM shall dispense the requested amount.",
 		  "",
-		  "Where each requirement is an example of the following template type:",
+		  "Each of these requirements follows an EARS template:",
 		  "",
 		  "1. UBIQUITOUS: The requirement is always active, regardless of state or condition.",
 		  "2. STATE: Behavior is contingent upon the system being in a specific state.",
